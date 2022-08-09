@@ -16,7 +16,7 @@ mongo
 
 Create a new folder for your app, you can call it anything, on your terminal navigate to the newly created folder and run this command
 
-npm init -y
+npm init
 this will create a package.json file for us.
 
 install the following dependencies

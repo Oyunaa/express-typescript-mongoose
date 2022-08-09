@@ -10,8 +10,8 @@ POST  http://localhost:3000/api/todo
 content-type: application/json
 
 {
-    "title": "todo1",
-    "description": "todo desc"
+    "title": "todo2",
+    "description": "todo2 desc"
 }
 
 ###
