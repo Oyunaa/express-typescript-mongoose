@@ -41,7 +41,7 @@ mongoose.connection.on("connected", () => {
 });
 
 app.get("/api", (req, res) => {
-  res.status(200).send("Welcome to REST API");
+  res.status(200).send({ message: "Welcome to REST API" });
 });
 
 app.listen(3030, () => {
