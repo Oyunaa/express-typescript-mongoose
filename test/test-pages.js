@@ -1,13 +1,10 @@
 const expect = require("chai").expect;
 const request = require("request");
-let base_url = "http://localhost:3000";
+let base_url = "http://172.18.0.1";
 //"http://localhost:3030";
 
 it("Main page content", function (done) {
   request(`${base_url}/api`, function (error, response, body) {
-    //console.log(response.body);
-    // expect(body).to.equal("Welcome to REST API");
-    // expect(response).to.have.property("body");
     console.log(error);
     console.log(body);
     var jsonData = JSON.parse(body);
