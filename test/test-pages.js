@@ -10,7 +10,7 @@ it("Main page content", function (done) {
 
     var jsonData = JSON.stringify(body);
 
-    expect(jsonData).to.equal(JSON.stringify("Welcome to REST API"));
+    expect(jsonData).to.eql(JSON.stringify("Welcome to REST API"));
     done();
   });
 });
