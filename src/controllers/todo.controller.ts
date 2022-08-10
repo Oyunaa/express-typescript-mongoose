@@ -18,5 +18,7 @@ exports.create = async (req: Request, res: Response) => {
 
 exports.findOne = async (req: Request, res: Response) => {
   const todo = await Todo.find({});
-  return res.status(200).send(todo);
+  return res
+    .status(200)
+    .send({ result: todo, status: true, message: "success" });
 };
