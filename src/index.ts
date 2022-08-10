@@ -44,6 +44,6 @@ app.get("/api", (req, res) => {
   res.status(200).send({ message: "Welcome to REST API" });
 });
 
-app.listen(3030, () => {
+app.listen(3000, () => {
   console.log("server is listening on 3030 port");
 });
