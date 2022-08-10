@@ -8,7 +8,9 @@ it("Main page content", function (done) {
     // expect(body).to.equal("Welcome to REST API");
     // expect(response).to.have.property("body");
 
-    var jsonData = JSON.parse(body.trim());
+    body = body.trim();
+
+    var jsonData = JSON.parse(body);
 
     expect(jsonData).to.property("message");
     done();
