@@ -1,4 +1,4 @@
 export const dbconfig = {
   production: false,
-  connectionString: 'write your mongo db config'
+  connectionString: "mongodb://finance1:finance1@localhost:27028",
 };
