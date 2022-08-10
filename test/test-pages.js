@@ -1,6 +1,6 @@
 const expect = require("chai").expect;
 const request = require("request");
-let base_url = "http://localhost:2376";
+let base_url = "http://localhost:8080";
 //"http://localhost:3030";
 
 it("Main page content", function (done) {
