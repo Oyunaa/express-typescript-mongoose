@@ -6,6 +6,7 @@ let base_url = "http://172.18.0.1";
 it("Main page content", function (done) {
   request(`${base_url}/api`, function (error, response, body) {
     console.log(error);
+    console.log(error, "err");
     console.log(body);
     var jsonData = JSON.parse(body);
 
