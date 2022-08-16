@@ -5,12 +5,10 @@ let base_url = "http://localhost:4000";
 
 it("Main page content", function (done) {
   request(`${base_url}/api`, function (error, response, body) {
-    console.log(error);
-    console.log(error, "err");
-    console.log(body);
+
     var jsonData = JSON.parse(body);
 
-    expect(jsonData).to.property("message").equal("Welcome to REST API");
+    expect(jsonData).to.property("messages").equal("Welcome to REST API");
     done();
   });
 });
