@@ -8,7 +8,7 @@ it("Main page content", function (done) {
 
     var jsonData = JSON.parse(body);
 
-    expect(jsonData).to.property("messages").equal("Welcome to REST API");
+    expect(jsonData).to.property("message").equal("Welcome to REST API");
     done();
   });
 });
